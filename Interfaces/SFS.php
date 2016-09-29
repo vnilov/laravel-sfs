@@ -1,6 +1,7 @@
 <?php
 
 namespace SimpleFileStorage\Interfaces;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 interface SFS
 {

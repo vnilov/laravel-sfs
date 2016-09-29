@@ -4,6 +4,7 @@ namespace SimpleFileStorage;
 
 use SimpleFileStorage\Eloquent\File;
 use SimpleFileStorage\Interfaces\SFS;
+use SimpleFileStorage\Interfaces\SFSFacade;
 
 class SFSL52 implements SFS
 {

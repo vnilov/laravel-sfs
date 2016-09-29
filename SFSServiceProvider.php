@@ -2,8 +2,7 @@
 
 namespace SimpleFileStorage;
 
-
-use Illuminate\Support\ServiceProvider;
+use \Illuminate\Support\ServiceProvider;
 
 class SFSServiceProvider extends ServiceProvider 
 {
