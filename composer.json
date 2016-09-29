@@ -1,0 +1,24 @@
+{
+  "name": "vnilov/laravel-sfs",
+  "description": "Simple Eloquent File Storage support in your Laravel application",
+  "keywords": ["laravel", "file", "storage", "eloquent"],
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Vadim Nilov",
+	  "email": "nilo.vadim@gmail.com"
+	}
+  ],
+  "require": {
+	"php": ">=5.5.9",
+	"illuminate/database": "5.2.x"
+  },
+  "autoload": {
+	"psr-4": {
+	  "SimpleFileStorage\\": ""
+	}
+  },
+  "require-dev": {
+	"phpunit/phpunit": "^4.8|^5.2"
+  }
+}
