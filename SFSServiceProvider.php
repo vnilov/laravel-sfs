@@ -11,6 +11,18 @@ class SFSServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/sfs.php' => config_path('sfs.php')
         ], 'config');
+
+        $this->publishes([
+            __DIR__ . '/database/migrations/' => database_path('migrations')
+        ], 'migrations');
+
+        $this->publishes([
+            __DIR__ . '/database/factories/' => database_path('factories')
+        ], 'factories');
+
+        $this->publishes([
+            __DIR__ . '/tests/' => base_path('tests')
+        ], 'tests');
     }
 
     public function register()
