@@ -5,7 +5,7 @@ namespace SimpleFileStorage;
 use SimpleFileStorage\Eloquent\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
-class SFSFacadeL52 implements Interfaces\SFSFacade
+class SFSFacadeL52 implements SFSFacade
 {
     private $_length;
     private $_chunk_length;

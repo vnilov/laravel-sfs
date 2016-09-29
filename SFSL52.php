@@ -6,7 +6,7 @@ use SimpleFileStorage\Eloquent\File;
 use SFSFacade;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
-class SFSL52 implements Interfaces\SFS
+class SFSL52 implements SFS
 {
     private $facade;
     
