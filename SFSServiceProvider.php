@@ -15,6 +15,6 @@ class SFSServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('SimpleFileStorage\SFSFacade', 'SimpleFileStorage\FacadeL52');
+        $this->app->bind('SimpleFileStorage\SFSFacade', 'SimpleFileStorage\SFSFacadeL52');
     }
 }
