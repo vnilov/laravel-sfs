@@ -3,6 +3,7 @@
 namespace SimpleFileStorage;
 
 use SimpleFileStorage\Eloquent\File;
+use SimpleFileStorage\Interfaces\SFS;
 
 class SFSL52 implements SFS
 {

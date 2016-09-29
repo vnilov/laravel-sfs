@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleFileStorage;
+namespace SimpleFileStorage\Interfaces;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

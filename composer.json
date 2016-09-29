@@ -11,7 +11,8 @@
   ],
   "require": {
 	"php": ">=5.5.9",
-	"illuminate/database": "5.2.x"
+	"illuminate/database": "5.2.x",
+	"symfony/http-foundation": "3.1.x"
   },
   "autoload": {
 	"psr-4": {

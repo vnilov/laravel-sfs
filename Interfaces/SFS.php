@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleFileStorage;
+namespace SimpleFileStorage\Interfaces;
 
 interface SFS
 {
