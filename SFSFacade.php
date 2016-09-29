@@ -14,4 +14,6 @@ interface SFSFacade
     public function interpolation();
     public function saveModel();
     public function saveFile();
+    public function getUrl($id);
+    public function save(UploadedFile $file);
 }

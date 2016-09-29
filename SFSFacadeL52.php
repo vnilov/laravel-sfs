@@ -69,4 +69,23 @@ class SFSFacadeL52 implements SFSFacade
     {
         return $this->_file->move(storage_path(config('sfs.storage_path') . $this->getPath()), $this->getName());
     }
+
+    public function getUrl($id)
+    {
+        if ((int)$id > 0) {
+            $file = File::findOrFail($id);
+            $this->setID($file->getKey());
+            return storage_path(config('sfs.storage_path') . $this->getPath()) . $this->getName($file->name);
+        }
+        throw new \Exception('Bad ID param');
+    }
+
+    public function save(UploadedFile $file)
+    {
+        $this->setFile($file);
+        $this->setID($thiы->saveModel());
+        if ($this->saveFile())
+            return;
+        throw new \Exception('Something went wrong when file had been saving');
+    }
 }
