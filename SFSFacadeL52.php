@@ -52,7 +52,7 @@ class SFSFacadeL52 implements SFSFacade
         return chunk_split(substr($this->interpolation(), 0, $this->_length - $this->_chunk_length), $this->_chunk_length, "/");
     }
 
-    public function getName($name)
+    public function getName($name = null)
     {
         $name = (isset($name)) ? $name : $this->_file->getClientOriginalName();
         return $this->interpolation() . "." . pathinfo($name, PATHINFO_EXTENSION);
