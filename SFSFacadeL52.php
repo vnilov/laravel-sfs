@@ -83,7 +83,7 @@ class SFSFacadeL52 implements SFSFacade
     public function save(UploadedFile $file)
     {
         $this->setFile($file);
-        $this->setID($thiы->saveModel());
+        $this->setID($this->saveModel());
         if ($this->saveFile())
             return;
         throw new \Exception('Something went wrong when file had been saving');
