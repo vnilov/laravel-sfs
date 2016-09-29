@@ -3,7 +3,8 @@
 namespace SimpleFileStorage;
 
 use SimpleFileStorage\Eloquent\File;
-use SimpleFileStorage\Interfaces\SFSFacade;
+use SFSFacade;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class SFSL52 implements Interfaces\SFS
 {
@@ -23,7 +24,7 @@ class SFSL52 implements Interfaces\SFS
         }
         throw new \Exception('Bad ID param');
     }
-    public function save($file)
+    public function save(UploadedFile $file)
     {
         $this->facade->setFile($file);
         $this->facade->setID($this->facade->saveModel());
