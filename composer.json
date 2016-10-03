@@ -16,8 +16,7 @@
   },
   "autoload": {
 	"classmap": [
-	  "database",
-	  "packages/websanova/demo/src/migrations"
+	  "src/database"
 	],
 	"psr-4": {
 	  "SimpleFileStorage\\": "src/"
