@@ -20,7 +20,7 @@
 	  "packages/websanova/demo/src/migrations"
 	],
 	"psr-4": {
-	  "SimpleFileStorage\\": ""
+	  "SimpleFileStorage\\": "src/"
 	}
   },
   "require-dev": {
