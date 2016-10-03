@@ -14,7 +14,7 @@ This is a simple package to develop file storage which is based on uploaded file
 - Laravel Framework (currently 5.2)
 
 ### Install
-1. Run `composer require laravel-sfs`
+1. Run `composer require vnilov/laravel-sfs`
 2. Add this line to your `app.php` config file within **providers** section:
 `SimpleFileStorage\SFSServiceProvider::class`
 3. Publish config and migration: 
