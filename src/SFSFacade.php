@@ -16,4 +16,6 @@ interface SFSFacade
     public function saveFile();
     public function getUrl($id);
     public function save(UploadedFile $file);
+    public function update($id,  UploadedFile $file);
+    public function destroy($id);
 }

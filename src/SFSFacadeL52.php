@@ -156,4 +156,18 @@ class SFSFacadeL52 implements SFSFacade
         }
         throw new \Exception('Bad ID param');
     }
+
+    /**
+     * @param $id
+     *  
+     * @return mixed
+     * @throws \Exception
+     */
+    public function destroy($id)
+    {
+        if ((int)$id > 0) {
+            return File::destroy($id);
+        }
+        throw new \Exception('Bad ID param');
+    }
 }
