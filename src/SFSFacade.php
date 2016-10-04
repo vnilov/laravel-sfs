@@ -11,7 +11,7 @@ abstract class SFSFacade
     private $_id = null;
     private $_file = null;
 
-    protected function __construct()
+    public function __construct()
     {
         $this->_length = config('sfs.length');
         $this->_chunk_length = config('sfs.chunk_length');
