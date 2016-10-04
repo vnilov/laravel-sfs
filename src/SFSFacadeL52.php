@@ -25,7 +25,7 @@ class SFSFacadeL52 extends SFSFacade
     {
         $file = File::findOrFail($id);
         $this->setID($file->getKey());
-        return storage_path(config('sfs.storage_path') . $this->getPath()) . $this->getName($file->name);
+        return "/" . $this->getPath() . $this->getName($file->name);
     }
 
     /**
