@@ -2,6 +2,7 @@
 
 namespace SimpleFileStorage;
 
+use SimpleFileStorage\Eloquent\File;
 use \Illuminate\Http\UploadedFile;
 
 abstract class SFSFacade
