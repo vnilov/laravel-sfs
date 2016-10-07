@@ -57,10 +57,7 @@ class SFSFacadeL52 extends SFSFacade
         // set file id
         $this->setID($id);
         if ($this->saveFile()) {
-            // receive instance
-            $file = File::findOrFail($this->getID());
-            // update model
-            return $file->update($this->setAttributes());
+            return File::where('id', $this->getID())->update($this->setAttributes());
         }
 
     }
