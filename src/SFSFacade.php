@@ -106,7 +106,7 @@ abstract class SFSFacade
      */
     protected function saveModel()
     {
-        $file = new File($this->setAttributes($this->_file));
+        $file = new File($this->setAttributes());
         $file->saveOrFail();
         return $file->getKey();
     }
